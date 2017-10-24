@@ -25,7 +25,7 @@ SECRET_KEY = '30p023(4&-5v)!ob&3#lxv+o*@#bkbo=ynh7^+hv2l9)(jj#0@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '172.24.1.134', 'db7a5975.ngrok.io']
 
 
 # Application definition
