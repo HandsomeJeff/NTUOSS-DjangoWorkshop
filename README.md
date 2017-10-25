@@ -2,7 +2,7 @@
 
 *by [Steve](https://github.com/HandsomeJeff) for NTU Open Source Society*
 
-This workshop is based on [nickoala/telepot](https://github.com/nickoala/telepot) and assumes intermediate knowledge of Python.
+This workshop assumes intermediate knowledge of Python.
 
 **Disclaimer:** *This document is only meant to serve as a reference for the attendees of the workshop. It does not cover all the concepts or implementation details discussed during the actual workshop.*
 ___
@@ -17,13 +17,7 @@ Please raise your hand any time during the workshop or email your questions to [
 
 ### Errors
 For errors, typos or suggestions, please do not hesitate to [post an issue](https://github.com/clarencecastillo/NTUOSS-TelegramBotsWorkshop/issues/new). Pull requests are very welcome! Thanks!
-___
 
-## Index
-
-Task 0 - Getting Started
-    - 0.1 Introduction
-    - 0.2 Initial Setup
 ___
 
 ## Task 0 - Getting Started
@@ -89,7 +83,7 @@ A new folder should appear, with the name *newapp*.
 ![task 1.3 screenshot](screenshots/task_1_3.png?raw=true)
 
 #### 1.4 Link App to Project
-After creating and application, we have to tell Django to use it. We need to edit the file `newproject/settings.py`. Find `INSTALLED_APPS` and add `newproject` just above `]`.
+After creating and application, we have to tell Django to use it. We need to edit the file `newproject/settings.py`. Find `INSTALLED_APPS` and add `newapp` just above `]`.
 ```python
 # in newproject/settings.py
 INSTALLED_APPS = [
@@ -99,7 +93,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'newproject',
+    'newapp',
 ]
 ```
 
@@ -368,6 +362,32 @@ Also, I lied about only adding two numbers. My server can actually add as many n
 ![task 4.2.3 screenshot](screenshots/task_4_2_3.jpeg?raw=true)
 Cool! Now I can additions stuff pretty much anywhere with an internet connection. Frees up my brain to do other stuff. Like subtractions.
 
+#### 4.3 Put it to the Test v2
+
+As a programmer, we may want to use this new web app in our other projects. Let's create an empty python script `newscript.py`, and import the following:
+```python
+import requests
+```
+You can place this file anywhere you like.
+
+Next, we'll add in the url of our app. You can use either the local or global addresses.
+```python
+url = 'http://127.0.0.1:8000/newapp'
+```
+
+Then, we'll add in the `headers`. They are supposed to be structured like the `json` packages. But in this case we'll manually type out the string, as
+```python
+string = '?x=2&y=5'
+```
+
+Finally, we'll make a request to our app and print the results
+```python
+r = requests.get(url+string)
+print(r.text)
+```
+
+You should get the the same line as you did in your browser
+![task 4.3 screenshot](screenshots/task_4_3.png?raw=true)
 
 ## Further Notes
 
@@ -377,12 +397,17 @@ But there are some security concerns with this build. I don't know about you, bu
 
 According to the good folks at [django](https://docs.djangoproject.com/en/dev/ref/django-admin/#django-admin-runserver):
 ```
-DO NOT USE THIS SERVER IN A PRODUCTION SETTING. It has not gone through security audits or performance tests. (And that’s how it’s gonna stay. We’re in the business of making Web frameworks, not Web servers, so improving this server to be able to handle a production environment is outside the scope of Django.)
+DO NOT USE THIS SERVER IN A PRODUCTION SETTING. It has not gone through security audits or
+performance tests. (And that’s how it’s gonna stay. We’re in the business of making Web
+frameworks, not Web servers, so improving this server to be able to handle a production
+environment is outside the scope of Django.)
 ```
 Good luck!
 
 ## Acknowledgements
 
 Thanks, django!
+
 Thanks, [NTU Open Source Society](https://github.com/ntuoss)!
-Thanks, Linux!
+
+Thanks, Linux Mint!
