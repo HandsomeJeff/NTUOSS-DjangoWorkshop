@@ -179,6 +179,7 @@ We'll start by stopping our server with `Ctrl+C`.
 Next, we'll have to figure out our internal IP address.
 
 On terminal, run `ifconfig`.
+
 ![task 2.1 screenshot](screenshots/task_2_1.png?raw=true)
 Grab the `inet addr` of your machine.
 
@@ -339,6 +340,7 @@ Now, save and exit.
 
 Go to your browser, and type in `db7a5975.ngrok.io/newapp/`. You should see the following page:
 ![task 4.2 screenshot](screenshots/task_4_2.png?raw=true)
+
 Well of course! We haven't entered the numbers we want to add.
 
 We wanted to know what is `2 + 5`. Now, at the end of your url, add in `?x=2&y=5`.
@@ -356,6 +358,7 @@ To the server with address `db7a5975.ngrok.io/newapp/`.
 
 Let's have a look at our answer. Hopefully it's 7.
 ![task 4.2.2 screenshot](screenshots/task_4_2_2.png?raw=true)
+
 Okay, so it says 7.0. But that's just being picky. I think I did pretty good here.
 
 Also, I lied about only adding two numbers. My server can actually add as many numbers as you can throw at it (the smarter ones would have realised it).
