@@ -239,7 +239,7 @@ You should be greeted with the following screen
 
 That thing underlined in red? That's the url to **my** fancy server. But don't go `Ctrl+C/Ctrl+Z`-ing just yet! We can't access it right now. I mean, you can go ahead and do that. But nothing good will come of it.
 
-**Take not of that address. Leave ngrok running.**
+**Take note of that address. Leave ngrok running.**
 
 *Note: This URL changes every time you start ngrok. They say no two URLs of the same string have been observed in the wild...*
 
