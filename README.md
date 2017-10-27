@@ -48,7 +48,7 @@ This will be hosted entirely on our own machines!
 #### 1.1 Create a New Project
 
 On Linux or Mac OS X, open terminal. Navigate to a directory of your choice and enter:
-`django-admin newproject`. Leave terminal running.
+`django-admin startproject newproject`. Leave terminal running.
 
 On Windows, open cmd. Navigate to the directory of your choice and enter:
 '"PATH_TO_PYTHON\Scripts\django-admin.exe" startproject newproject'
