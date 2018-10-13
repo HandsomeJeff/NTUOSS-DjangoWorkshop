@@ -1,22 +1,22 @@
 # NTUOSS Django Workshop
 
-*by [Steve](https://github.com/HandsomeJeff) for NTU Open Source Society*
+*by [Steve](https://github.com/HandsomeJeff) for NTU Open Source Society & iNTUition 2018*
 
-This workshop assumes intermediate knowledge of Python.
+This workshop assumes some knowledge of Python.
 
 **Disclaimer:** *This document is only meant to serve as a reference for the attendees of the workshop. It does not cover all the concepts or implementation details discussed during the actual workshop.*
 ___
-
+<!--
 ### Workshop Details
-**When**: Friday, 27 Oct 2017. 6:30 PM - 8:30 PM.</br>
+**When**: Friday, 12 Oct 2018. </br>
 **Where**: Theatre@TheNest, Innovation Centre, Nanyang Technological University</br>
-**Who**: NTU Open Source Society
+**Who**: NTU Open Source Society -->
 
 ### Questions
 Please raise your hand any time during the workshop or email your questions to [me](mailto:yefan0072001@gmail.com) later.
 
 ### Errors
-For errors, typos or suggestions, please do not hesitate to [post an issue](https://github.com/clarencecastillo/NTUOSS-TelegramBotsWorkshop/issues/new). Pull requests are very welcome! Thanks!
+For errors, typos or suggestions, please do not hesitate to [post an issue](https://github.com/HandsomeJeff/NTUOSS-DjangoWorkshop/issues/new). Pull requests are very welcome! Thanks!
 
 ___
 
@@ -25,7 +25,7 @@ ___
 #### 0.1 Introduction
 
 
-For this session, we'll be building a server which allows us to run applications that communicate with the outside world.
+In this workshop, we'll be building a server which allows us to run applications that communicate with the outside world.
 
 This will be hosted entirely on our own machines!
 
