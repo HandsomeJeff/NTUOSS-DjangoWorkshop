@@ -51,10 +51,12 @@ On Linux or Mac OS X, open terminal. Navigate to a directory of your choice and 
 `django-admin startproject newproject`. Leave terminal running.
 
 On Windows, open cmd. Navigate to the directory of your choice and enter:
-'"PATH_TO_PYTHON\Scripts\django-admin.exe" startproject newproject'
+<!-- '"PATH_TO_PYTHON\Scripts\django-admin.exe" startproject newproject' -->
+`"django-admin.exe" startproject newproject`
 
-i.e. If you have Python 3.6 installed, and it is located in your C Drive, then the command will look like:
-`"C:\Python36\Scripts\django-admin.py" startproject newproject`. Leave cmd running.
+<!-- i.e. If you have Python 3.X installed, and it is located in your C Drive, then the command will look like:
+`"C:\Python3X\Scripts\django-admin.py" startproject newproject`.  Leave cmd running. -->
+
 
 You should see a new folder called *newproject* in the directory.
 ![task 1.1 screenshot](screenshots/task_1_1.png?raw=true)
