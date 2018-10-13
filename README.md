@@ -63,6 +63,8 @@ You should see a new folder called *newproject* in the directory.
 
 #### 1.2 Run the Server
 
+***Note: `ls` is Linux/MacOS command. The Windows equivalent is `dir`***
+
 Still on terminal/cmd, enter `cd newproject` to get into the *newproject* folder. Enter `ls` and should see a *new project* folder, and a `manage.py` file.
 
 At this stage, enter `python manage.py runserver` to start the server. This initiates a new server on your machine, with the default address `127.0.0.1`, and port `8000`.
